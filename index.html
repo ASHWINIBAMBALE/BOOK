@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bookslove</title>
     <link rel="stylesheet" href="style.css">
@@ -16,18 +16,23 @@
         <div class="container">
             <div class="navbar">
                 <div class="logo">
-                    <p style="font-size: 60px;color:#8c0000">Bookslove</p>
+                   <a href="index.html"><p style="font-size: 30px;color:#8c0000">Bookslove</p></a> 
                 </div>
                 <nav>
-                    <ul>
-                        <li><a href="#">Home    </a></li>
-                        <li><a href="#">Product</a></li>
+                    <ul id="menuItems">
+                        <li><a href="index.html">Home    </a></li>
+                        <li><a href="products.html">Product</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Contact</a></li>
-                        <li><a href="#">Account</a></li>
+                        <li><a href="account.html">Account</a></li>
                     </ul>
                 </nav>
-                <i class="fal fa-shopping-bag"></i>
+            
+                   <a href="cart.html" target="_blank"> <i class="fal fa-shopping-bag"></i></a>
+                
+                    <i class=" menu far fa-list" onclick="menutoggle()"></i>
+                
+               
             </div>
             <div class="row">
                 <div class="col2">
@@ -37,7 +42,7 @@
                         <a href="" class="btn"> Explore now &#8594;</a>
                     </div>
                 <div class="col2">
-                    <img src="https://museum.wales/media/48388/stack-of-books.jpg" width="2400px" height="600px">
+                    <img src="https://i.pinimg.com/originals/d3/1a/9d/d31a9d645d9adb139effc341fe4287e3.png">
                 </div>
             </div>
         </div>
@@ -65,8 +70,8 @@
     <h2 class="title">Mythology</h2>
     <div class="row">
         <div class="col4">
-            <img src="palaceofillusion.jpeg" >
-            <h4>Palace of Illusion Book</h4>
+           <a href="prduct_detail.html"><img src="palaceofillusion.jpeg" ></a> 
+           <a href="prduct_detail.html"><h4>Palace of Illusion Book</h4></a>
             <div class="rating">
                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half"></i>
             </div>
@@ -216,7 +221,7 @@
             </div>
             <div class="col2">
                 <p>Deal of the day  </p>
-                <h1>Dall Carnege Book Set</h1>
+                <h1>Dale Carnege Book Set</h1>
                 <small>Book set contains 1)How to win friends and influence people. 2)How to develope self confiedence  and influence people by 
                     public speaking 3) How to enjoy your life and your job.
                 4)The quick and easy way aato effective speaking.
@@ -309,10 +314,16 @@
             <div class="footer-col1">
                 <h3>Download</h3>
                 <p>Download app for ios mobile phone.</p>
+                <div class="applogo">
+                   <button class="btn1"><i class="fab fa-google-play">Download</i></button> 
+                   <button class="btn1"> <i class="fab fa-apple">Download</i></button> 
+                   
+                   
+                </div>
             </div>
             <div class="footer-col2">
-                <p style="font-size: 60px; color:#8c0000">Bookslove</p>
-                <p>On Notification.</p>
+                <p class="tagname"style="font-size: 50px; color:#8c0000">Bookslove</p>
+                <p> On Notification.</p>
             </div>
             <div class="footer-col3">
                <h3>Useful Links</h3>
@@ -333,7 +344,23 @@
                 </ul>
              </div>
         </div>
+        <hr>
+        <p class="Copyright">Copyright 2021 Bookslove</p>
     </div>
 </div>
+<script>
+    var menuItems=document.getElementById("menuItems");
+    menuItems.style.maxHeight="0px";
+    function menutoggle(){
+        if (menuItems.style.maxHeight=="0px")
+        {
+            menuItems.style.maxHeight="200px";
+        }
+        else{
+            menuItems.style.maxHeight="0px";
+        }
+    }
+
+</script>
 </body>
 </html>
