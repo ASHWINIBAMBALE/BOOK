@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cart-->Bookslove</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+</head>
+<body>
+   
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <p style="font-size: 30px;color:#8c0000">Bookslove</p>
+                </div>
+                <nav>
+                    <ul id="menuItems">
+                        <li><a href="index.html">Home    </a></li>
+                        <li><a href="products.html">Product</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+            
+                   <a href="cart.html" target="_blank"> <i class="fal fa-shopping-bag"></i></a>
+                
+                    <i class=" menu far fa-list" onclick="menutoggle()"></i>
+                
+               
+            </div>
+        
+        </div>
+        
+
+
+
+<!-- ----------Cart items detais----------- -->
+<div class="small-container cart-page">
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+            <td><div class="cart-info">
+                <img src="palaceofillusion.jpeg" alt="" >
+                <div>
+                    <p>Palace of Illusion</p>
+                    <small>350.00</small>
+                    <br>
+                    <a href="">Remove</a>
+                </div>
+            </div>
+
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>₹350.00</td>
+        </tr>
+        <tr>
+            <td><div class="cart-info">
+                <img src="Ahalyas's_Awaken.jpeg" alt="" >
+                <div>
+                    <p>Ahalyas Awaken</p>
+                    <small>₹350.00
+                    </small>
+                    <br>
+                    <a href="">Remove</a>
+                </div>
+            </div>
+
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>₹350.00</td>
+        </tr>
+        <tr>
+            <td><div class="cart-info">
+                <img src="Murder_on_orient_express.jpeg" alt="" >
+                <div>
+                    <p>Murder on Orient Express</p>
+                    <small>₹201.00</small>
+                    <br>
+                    <a href="">Remove</a>
+                </div>
+            </div>
+
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>₹201.00</td>
+        </tr>
+          
+    </table>
+    <div class="total-price">
+        <table>
+            <tr>
+                <td>Subtotal</td>
+                <td>₹350.00</td>
+            </tr>
+            <tr>
+                <td>Tax</td>
+                <td>₹350.00</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>₹350.00</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<!-- ------------footer----------- -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col1">
+                <h3>Download</h3>
+                <p>Download app for ios mobile phone.</p>
+                <div class="applogo">
+                   <button class="btn1"><i class="fab fa-google-play">Download</i></button> 
+                   <button class="btn1"> <i class="fab fa-apple">Download</i></button> 
+                   
+                   
+                </div>
+            </div>
+            <div class="footer-col2">
+                <p class="tagname"style="font-size: 50px; color:#8c0000">Bookslove</p>
+                <p> On Notification.</p>
+            </div>
+            <div class="footer-col3">
+               <h3>Useful Links</h3>
+               <ul>
+                   <li>Cupons</li>
+                   <li>Blog POst</li>
+                   <li>Return Policy</li>
+                   <li>Join Affiliate</li>
+               </ul>
+            </div>
+            <div class="footer-col4">
+                <h3>Fllow us </h3>
+                <ul>
+                    <li>Instagram</li>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>YouTube</li>
+                </ul>
+             </div>
+        </div>
+        <hr>
+        <p class="Copyright">Copyright 2021 Bookslove</p>
+    </div>
+</div>
+<script>
+    var menuItems=document.getElementById("menuItems");
+    menuItems.style.maxHeight="0px";
+    function menutoggle(){
+        if (menuItems.style.maxHeight=="0px")
+        {
+            menuItems.style.maxHeight="200px";
+        }
+        else{
+            menuItems.style.maxHeight="0px";
+        }
+    }
+
+</script>
+</body>
+</html>
